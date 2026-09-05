@@ -178,4 +178,10 @@ footer .right{margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size
   .features{grid-template-columns:1fr}
   .topnav{gap:12px}
 }
+@media (max-width:480px){
+  .topnav a{display:none}
+  .topbar .wrap{height:58px}
+  .brand span{font-size:17px}
+  .contact{flex-direction:column; align-items:flex-start; gap:10px}
+}
 @media (prefers-reduced-motion:reduce){*{transition:none!important; animation:none!important}}

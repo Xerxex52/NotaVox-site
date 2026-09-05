@@ -1,11 +1,14 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-lang="fr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NotaVox — notes vocales, transcription et comptes-rendus</title>
-<meta name="description" content="NotaVox transforme tes enregistrements vocaux en notes structurées : transcription en 4 langues et compte-rendu intelligent sur iPhone et iPad. Support et confidentialité.">
+<meta name="description" content="NotaVox transforme tes enregistrements vocaux en notes structurées : transcription en quatre langues et compte-rendu intelligent sur iPhone et iPad. Support et confidentialité.">
 <meta name="color-scheme" content="light dark">
+<meta property="og:title" content="NotaVox — ta voix devient une note structurée">
+<meta property="og:description" content="Enregistre, transcris, et récupère un compte-rendu : résumé, décisions, actions. Sans compte, sans publicité, sans suivi.">
+<meta property="og:type" content="website">
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,199 +22,261 @@
 <div class="topbar">
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/icon.png" alt=""><span>NotaVox</span></a>
-    <nav class="topnav">
-      <a href="#support">Support</a>
-      <a href="privacy.html"><span class="fr">Confidentialité</span><span class="en">Privacy</span></a>
-      <div class="langtoggle" role="group" aria-label="Langue / Language">
-        <button type="button" data-lang="fr" aria-pressed="true">FR</button>
-        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+    <nav class="nav">
+      <a href="#fonctionnalites" data-i18n="nav.features">Fonctionnalités</a>
+      <a href="#ecrans" data-i18n="nav.screens">Dans l'app</a>
+      <a href="#offres" data-i18n="nav.pricing">Offres</a>
+      <a href="#support" data-i18n="nav.faq">Support</a>
+      <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
+      <div class="langs" role="group" aria-label="Langue">
+        <button type="button" data-lang="fr" aria-pressed="true">fr</button>
+        <button type="button" data-lang="en" aria-pressed="false">en</button>
+        <button type="button" data-lang="de" aria-pressed="false">de</button>
+        <button type="button" data-lang="es" aria-pressed="false">es</button>
       </div>
     </nav>
   </div>
 </div>
 
-<div class="wrap">
-  <header class="hero">
+<header class="hero">
+  <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow"><span class="fr">Bientôt sur l'App Store · iPhone et iPad</span><span class="en">Coming soon to the App Store · iPhone and iPad</span></p>
-        <h1><span class="fr">Ta voix devient une note structurée.</span><span class="en">Your voice becomes a structured note.</span></h1>
-        <p class="sub">
-          <span class="fr">Enregistre une réunion, une idée ou un cours. NotaVox transcrit, résume, et sort les décisions et les actions.</span>
-          <span class="en">Record a meeting, an idea, or a lecture. NotaVox transcribes it, summarizes it, and pulls out the decisions and action items.</span>
-        </p>
-        <div class="facts">
-          <span class="fact"><span class="dot"></span><b>iOS 18</b><span class="fr">ou plus récent</span><span class="en">and later</span></span>
-          <span class="fact"><b>4</b><span class="fr">langues de transcription</span><span class="en">transcription languages</span></span>
-          <span class="fact"><span class="fr"><b>4,99 €</b> une seule fois</span><span class="en"><b>€4.99</b> one time</span></span>
-          <span class="fact"><span class="fr">Aucun compte</span><span class="en">No account</span></span>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Bientôt sur l'App Store · iPhone et iPad</p>
+        <h1 data-i18n="hero.title">Ta voix devient une note structurée.</h1>
+        <p class="lead" data-i18n="hero.lead">Enregistre une réunion, une idée ou un cours. NotaVox transcrit, résume, et fait ressortir les décisions et les actions.</p>
+        <div class="cta">
+          <a class="btn btn-primary" href="#fonctionnalites" data-i18n="hero.cta1">Voir les fonctionnalités</a>
+          <a class="btn btn-ghost" href="#support" data-i18n="hero.cta2">Écrire au support</a>
+        </div>
+        <div class="trust">
+          <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t1">Aucun compte</span></span>
+          <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t2">Aucune publicité</span></span>
+          <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t3">Aucun suivi</span></span>
         </div>
       </div>
-      <div class="shot">
-        <img src="assets/fr-01-record.png" alt="Écran d'enregistrement de NotaVox : forme d'onde, minuteur et bouton d'enregistrement." width="620" height="1062">
+      <div class="device tilt">
+        <img src="assets/fr-01-record.png" width="620" height="1062" alt="Écran d'enregistrement de NotaVox : forme d'onde, minuteur et bouton d'enregistrement.">
       </div>
     </div>
-  </header>
+  </div>
+</header>
 
-  <section id="features">
-    <div class="sec-top">
-      <h2><span class="fr">Ce que fait l'app</span><span class="en">What the app does</span></h2>
+<section class="deep">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="steps.eyebrow">Trois étapes</p>
+      <h2 data-i18n="steps.title">De la parole à la décision, sans ressaisie.</h2>
+      <p class="lead" data-i18n="steps.lead">Tu appuies une fois. Le reste s'enchaîne pendant que tu passes à autre chose.</p>
     </div>
-    <div class="features">
+    <div class="steps">
+      <div class="step">
+        <span class="num">01</span>
+        <h3 data-i18n="steps.n1t">Tu enregistres</h3>
+        <p data-i18n="steps.n1p">Un appui sur le bouton rouge. NotaVox capte la voix, affiche la forme d'onde et le minuteur ; l'écran peut se verrouiller.</p>
+      </div>
+      <div class="step">
+        <span class="num">02</span>
+        <h3 data-i18n="steps.n2t">L'app transcrit</h3>
+        <p data-i18n="steps.n2p">La transcription arrive seule à la fin de l'enregistrement, avec un résumé et les actions repérées dans le texte.</p>
+      </div>
+      <div class="step">
+        <span class="num">03</span>
+        <h3 data-i18n="steps.n3t">Tu récupères le compte-rendu</h3>
+        <p data-i18n="steps.n3p">Résumé, décisions, actions, questions ouvertes : quatre blocs à partager ou à envoyer dans Rappels.</p>
+      </div>
+    </div>
+  </div>
+</section>
 
-      <div class="feature">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2M7 8v8M11 4v16M15 8v8M19 11v2"/></svg>
-        <h3><span class="fr">Enregistrer</span><span class="en">Record</span></h3>
-        <p><span class="fr">Un appui pour lancer l'enregistrement, rien à régler.</span><span class="en">One tap to start recording. Nothing to set up.</span></p>
+<section id="fonctionnalites">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="feat.eyebrow">Ce que fait l'app</p>
+      <h2 data-i18n="feat.title">Tout ce qu'une note vocale devrait savoir faire.</h2>
+    </div>
+    <div class="grid-4">
+
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 11v2M7 8v8M11 4v16M15 8v8M19 11v2"/></svg>
+        <h3 data-i18n="f1t">Enregistrer</h3>
+        <p data-i18n="f1p">Un appui pour lancer, rien à régler.</p>
         <ul>
-          <li><span class="fr">Lecture en arrière-plan, contrôles sur l'écran verrouillé</span><span class="en">Background playback with lock-screen controls</span></li>
-          <li><span class="fr">Vitesse de lecture réglable et minuteur d'arrêt</span><span class="en">Adjustable playback speed and sleep timer</span></li>
+          <li data-i18n="f1a">Lecture en arrière-plan, contrôles sur l'écran verrouillé</li>
+          <li data-i18n="f1b">Vitesse de lecture réglable et minuteur d'arrêt</li>
         </ul>
       </div>
 
-      <div class="feature">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 11h16M4 16h9"/></svg>
-        <h3><span class="fr">Transcrire</span><span class="en">Transcribe</span></h3>
-        <p><span class="fr">La transcription arrive seule à la fin de l'enregistrement.</span><span class="en">The transcript appears on its own when you stop recording.</span></p>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 11h16M4 16h9"/></svg>
+        <h3 data-i18n="f2t">Transcrire</h3>
+        <p data-i18n="f2p">Quatre langues, détectées jusque dans une même phrase.</p>
         <ul>
-          <li><span class="fr">Français, anglais, allemand, espagnol</span><span class="en">English, French, German, Spanish</span></li>
-          <li><span class="fr">Résumé et actions détectées, sans achat</span><span class="en">Summary and detected action items, no purchase</span></li>
+          <li data-i18n="f2a">Français, anglais, allemand, espagnol</li>
+          <li data-i18n="f2b">Résumé et actions détectées, sans achat</li>
         </ul>
       </div>
 
-      <div class="feature">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5l2 2 3.5-3.5M4 17.5l2 2 3.5-3.5M13 7h7M13 18h7"/></svg>
-        <h3><span class="fr">Structurer</span><span class="en">Structure</span></h3>
-        <p><span class="fr">Le compte-rendu intelligent découpe une réunion en quatre blocs.</span><span class="en">Smart Minutes breaks a meeting into four blocks.</span></p>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5l2 2 3.5-3.5M4 17.5l2 2 3.5-3.5M13 7h7M13 18h7"/></svg>
+        <h3 data-i18n="f3t">Structurer</h3>
+        <p data-i18n="f3p">Le compte-rendu intelligent découpe une réunion en quatre blocs.</p>
         <ul>
-          <li><span class="fr">Résumé exécutif, décisions, actions, questions ouvertes</span><span class="en">Executive summary, decisions, action items, open questions</span></li>
-          <li><span class="fr">Reformulation et questions/réponses sur la note</span><span class="en">Rewriting, and question answering about the note</span></li>
+          <li data-i18n="f3a">Résumé, décisions, actions, questions ouvertes</li>
+          <li data-i18n="f3b">Reformulation et questions/réponses sur la note</li>
         </ul>
       </div>
 
-      <div class="feature">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a2 2 0 012-2h3l2 2h7a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg>
-        <h3><span class="fr">Organiser</span><span class="en">Organize</span></h3>
-        <p><span class="fr">Une note se retrouve en quelques secondes, même six mois après.</span><span class="en">Any note is a few seconds away, even six months later.</span></p>
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a2 2 0 012-2h3l2 2h7a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg>
+        <h3 data-i18n="f4t">Organiser</h3>
+        <p data-i18n="f4p">Une note se retrouve en quelques secondes, même six mois après.</p>
         <ul>
-          <li><span class="fr">Tags, favoris, dossiers, recherche instantanée</span><span class="en">Tags, favorites, folders, instant search</span></li>
-          <li><span class="fr">Rappels créés depuis les actions détectées, partage et export</span><span class="en">Reminders from detected action items, sharing and export</span></li>
+          <li data-i18n="f4a">Tags, favoris, dossiers, recherche instantanée</li>
+          <li data-i18n="f4b">Rappels, partage et export</li>
         </ul>
       </div>
 
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="screens">
-    <div class="sec-top">
-      <h2><span class="fr">Dans l'app</span><span class="en">Inside the app</span></h2>
+<section id="ecrans" style="background:var(--panel); border-top:1px solid var(--stroke); border-bottom:1px solid var(--stroke)">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="shots.eyebrow">Dans l'app</p>
+      <h2 data-i18n="shots.title">Trois écrans, trois moments.</h2>
     </div>
-    <div class="strip">
+    <div class="showcase">
       <figure>
-        <img src="assets/fr-02-transcript.png" alt="Transcription d'une note affichée dans NotaVox." width="620" height="1062" loading="lazy">
-        <figcaption><span class="fr">La transcription, mot pour mot.</span><span class="en">The transcript, word for word.</span></figcaption>
+        <img src="assets/fr-02-transcript.png" width="620" height="1062" loading="lazy" alt="Transcription d'une note dans NotaVox, avec le lecteur audio.">
+        <figcaption><b data-i18n="shots.c1t">La transcription</b><span data-i18n="shots.c1p">Le texte complet, relisible et modifiable, avec le lecteur audio au-dessus.</span></figcaption>
       </figure>
       <figure>
-        <img src="assets/fr-03-minutes.png" alt="Compte-rendu intelligent : résumé, décisions, actions et questions." width="620" height="1062" loading="lazy">
-        <figcaption><span class="fr">Le compte-rendu : résumé, décisions, actions, questions.</span><span class="en">Smart Minutes: summary, decisions, actions, questions.</span></figcaption>
+        <img src="assets/fr-03-minutes.png" width="620" height="1062" loading="lazy" alt="Compte-rendu intelligent : résumé, décisions, actions et questions.">
+        <figcaption><b data-i18n="shots.c2t">Le compte-rendu</b><span data-i18n="shots.c2p">Résumé, décisions et actions détectées, avec un bouton pour les envoyer dans Rappels.</span></figcaption>
       </figure>
       <figure>
-        <img src="assets/fr-04-list.png" alt="Liste des notes avec tags, favoris et recherche." width="620" height="1062" loading="lazy">
-        <figcaption><span class="fr">Tes notes, avec tags et recherche.</span><span class="en">Your notes, with tags and search.</span></figcaption>
+        <img src="assets/fr-04-list.png" width="620" height="1062" loading="lazy" alt="Liste des notes vocales avec tags, favoris et recherche.">
+        <figcaption><b data-i18n="shots.c3t">Tes notes</b><span data-i18n="shots.c3p">Tags, favoris et recherche instantanée, sur les titres comme sur les transcriptions.</span></figcaption>
       </figure>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="intelligence">
-    <div class="note">
-      <h3><span class="fr">Ce qui demande Apple Intelligence</span><span class="en">What requires Apple Intelligence</span></h3>
-      <div class="fr">
-        <p>L'enregistrement, la transcription, le résumé, les actions détectées, les tags, la recherche et le partage fonctionnent sur tout iPhone ou iPad sous iOS 18 ou plus récent.</p>
-        <p>Le compte-rendu intelligent, la reformulation et les questions/réponses reposent sur Apple Intelligence : ils demandent iOS 26 sur un appareil compatible. Quand Apple Intelligence n'est pas disponible, l'app te le dit et ne te propose pas l'achat.</p>
+<section id="offres">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="plans.eyebrow">Les offres</p>
+      <h2 data-i18n="plans.title">Gratuit pour l'essentiel. Un seul achat pour le reste.</h2>
+      <p class="lead" data-i18n="plans.lead">Pas d'abonnement, pas de crédits à recharger. L'achat est lié à ton identifiant Apple et te suit sur tes appareils.</p>
+    </div>
+    <div class="plans">
+
+      <div class="plan">
+        <span class="tag" data-i18n="free.tag">L'application</span>
+        <p class="price" data-i18n="free.price">Gratuit</p>
+        <p data-i18n="free.sub">Tout ce qu'il faut pour enregistrer, transcrire et relire.</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l1">Enregistrement illimité</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l2">Transcription en 4 langues</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l3">Résumé et actions détectées</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l4">Tags, dossiers, recherche, partage</span></li>
+        </ul>
       </div>
-      <div class="en">
-        <p>Recording, transcription, the summary, detected action items, tags, search, and sharing work on any iPhone or iPad running iOS 18 or later.</p>
-        <p>Smart Minutes, rewriting, and question answering are powered by Apple Intelligence: they require iOS 26 on a supported device. When Apple Intelligence is unavailable, the app says so and does not offer the purchase.</p>
+
+      <div class="plan featured">
+        <span class="tag" data-i18n="pro.tag">Achat intégré</span>
+        <p class="price"><span data-i18n="pro.price">4,99 €</span><small data-i18n="pro.once">une seule fois</small></p>
+        <p data-i18n="pro.sub">Le compte-rendu intelligent, propulsé par Apple Intelligence.</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l1">Résumé exécutif et décisions</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l2">Actions et questions en suspens</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l3">Reformulation dans le ton de ton choix</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l4">Questions et réponses sur ta note</span></li>
+        </ul>
+      </div>
+
+    </div>
+    <p class="plan-note" data-i18n="plans.note">Ces trois fonctions demandent Apple Intelligence (iOS 26 sur un appareil compatible). Sur un appareil qui ne le gère pas, l'app l'indique et ne propose pas l'achat.</p>
+  </div>
+</section>
+
+<section class="deep">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="priv.eyebrow">Confidentialité</p>
+      <h2 data-i18n="priv.title">Pas de compte. Pas de serveur. Pas de suivi.</h2>
+    </div>
+    <div class="privacy-grid">
+      <div>
+        <span class="k" data-i18n="priv.k1">Stockage</span>
+        <h3 data-i18n="priv.h1">Tout reste dans l'app</h3>
+        <p data-i18n="priv.p1">Enregistrements, transcriptions et tags vivent sur ton appareil. NotaVox n'a pas de serveur : rien ne m'est envoyé.</p>
+      </div>
+      <div>
+        <span class="k" data-i18n="priv.k2">Transcription</span>
+        <h3 data-i18n="priv.h2">Le service d'Apple</h3>
+        <p data-i18n="priv.p2">La reconnaissance vocale d'Apple traite l'audio sur l'appareil ou sur ses serveurs selon la langue. C'est écrit noir sur blanc dans la politique.</p>
+      </div>
+      <div>
+        <span class="k" data-i18n="priv.k3">Apple Intelligence</span>
+        <h3 data-i18n="priv.h3">Sur l'appareil</h3>
+        <p data-i18n="priv.p3">Le compte-rendu, la reformulation et les questions/réponses s'exécutent en local, via le modèle du système.</p>
       </div>
     </div>
-  </section>
+    <p style="margin-top:34px"><a href="privacy.html" style="color:var(--deep-accent)" data-i18n="priv.link">Lire la politique de confidentialité</a></p>
+  </div>
+</section>
 
-  <section id="support">
-    <div class="sec-top">
-      <h2>Support</h2>
-      <p>
-        <span class="fr">NotaVox est développée par une seule personne. Écris-moi, je réponds.</span>
-        <span class="en">NotaVox is built by one person. Write to me and I will answer.</span>
-      </p>
+<section id="support">
+  <div class="wrap">
+    <div class="faq-col">
+      <div class="sec-head">
+        <p class="eyebrow" data-i18n="sup.eyebrow">Support</p>
+        <h2 data-i18n="sup.title">Une seule personne développe NotaVox. Elle répond.</h2>
+      </div>
+
+      <div class="contact">
+        <p data-i18n="sup.ask">Une question, un bug, une idée :</p>
+        <a href="mailto:sramezani52@gmail.com?subject=NotaVox">sramezani52@gmail.com</a>
+        <p data-i18n="sup.delay">Réponse sous 2 à 3 jours ouvrés, en français ou en anglais.</p>
+      </div>
+
+      <details>
+        <summary data-i18n="faq.q1">Où sont stockés mes enregistrements ?</summary>
+        <div class="body"><p data-i18n="faq.a1">Dans l'app, sur ton appareil. NotaVox n'a pas de serveur : rien n'est envoyé au développeur. Supprimer une note supprime son fichier audio ; désinstaller l'app supprime tout.</p></div>
+      </details>
+      <details>
+        <summary data-i18n="faq.q2">Le compte-rendu intelligent n'apparaît pas.</summary>
+        <div class="body"><p data-i18n="faq.a2">Cette fonction utilise Apple Intelligence, qui demande iOS 26 sur un appareil compatible. Ailleurs, la carte reste visible mais indique que la fonction n'est pas disponible, et l'achat n'est pas proposé : tu ne peux jamais payer pour une fonction que ton appareil ne peut pas exécuter.</p></div>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">J'ai changé d'iPhone, comment récupérer mon achat ?</summary>
+        <div class="body"><p data-i18n="faq.a3">Ouvre l'écran du compte-rendu intelligent et touche « Restaurer les achats ». L'achat est lié à ton identifiant Apple : il te suit sur tous tes appareils, sans repayer.</p></div>
+      </details>
+      <details>
+        <summary data-i18n="faq.q4">Comment changer la langue de transcription ?</summary>
+        <div class="body"><p data-i18n="faq.a4">Deux endroits : le sélecteur sur l'écran d'enregistrement, pour une note en particulier, et Réglages → Transcription → Langue par défaut, pour toutes les suivantes. La langue de l'interface se règle au même endroit, indépendamment de celle de l'appareil.</p></div>
+      </details>
+      <details>
+        <summary data-i18n="faq.q5">La transcription passe-t-elle par internet ?</summary>
+        <div class="body"><p data-i18n="faq.a5">Elle utilise le service de reconnaissance vocale d'Apple, qui traite l'audio sur l'appareil ou sur les serveurs d'Apple selon la langue et le modèle disponible. Le compte-rendu intelligent, lui, s'exécute sur l'appareil.</p></div>
+      </details>
+      <details>
+        <summary data-i18n="faq.q6">Je veux un remboursement.</summary>
+        <div class="body"><p data-i18n="faq.a6">Les achats passent par Apple, et les remboursements aussi : rends-toi sur reportaproblem.apple.com avec ton identifiant Apple. Écris-moi si ça bloque, je t'aiderai à monter la demande.</p></div>
+      </details>
     </div>
-
-    <div class="contact">
-      <p>
-        <span class="fr">Une question, un bug, une idée&nbsp;:</span>
-        <span class="en">A question, a bug, an idea:</span>
-      </p>
-      <a class="mail" href="mailto:sramezani52@gmail.com?subject=NotaVox">sramezani52@gmail.com</a>
-      <p>
-        <span class="fr">Réponse sous 2 à 3 jours ouvrés. En français ou en anglais.</span>
-        <span class="en">Answer within 2–3 business days, in English or French.</span>
-      </p>
-    </div>
-
-    <details>
-      <summary><span class="fr">Où sont stockés mes enregistrements&nbsp;?</span><span class="en">Where are my recordings stored?</span></summary>
-      <div class="body">
-        <p class="fr">Dans l'app, sur ton appareil. NotaVox n'a pas de serveur : rien n'est envoyé au développeur. Supprimer une note supprime son fichier audio ; désinstaller l'app supprime tout.</p>
-        <p class="en">Inside the app, on your device. NotaVox has no server, so nothing is sent to the developer. Deleting a note deletes its audio file; deleting the app deletes everything.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary><span class="fr">Le compte-rendu intelligent n'apparaît pas.</span><span class="en">Smart Minutes doesn't appear.</span></summary>
-      <div class="body">
-        <p class="fr">Cette fonction utilise Apple Intelligence, qui demande iOS 26 sur un appareil compatible. Sur un appareil qui ne le gère pas, la carte reste visible mais affiche « Apple Intelligence n'est pas disponible sur cet appareil » : l'achat n'est pas proposé, tu ne peux donc pas payer pour une fonction que ton appareil ne peut pas exécuter.</p>
-        <p class="en">This feature uses Apple Intelligence, which requires iOS 26 on a supported device. On a device that doesn't support it, the card stays visible but reads "Apple Intelligence is not available on this device": the purchase is not offered, so you can never pay for a feature your device cannot run.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary><span class="fr">J'ai changé d'iPhone, comment récupérer mon achat&nbsp;?</span><span class="en">I changed iPhone — how do I get my purchase back?</span></summary>
-      <div class="body">
-        <p class="fr">Ouvre l'écran du compte-rendu intelligent et touche « Restaurer les achats ». L'achat est lié à ton identifiant Apple : il te suit sur tous tes appareils, sans repayer.</p>
-        <p class="en">Open the Smart Minutes screen and tap "Restore purchases". The purchase is tied to your Apple Account, so it follows you across your devices at no extra cost.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary><span class="fr">Comment changer la langue de transcription&nbsp;?</span><span class="en">How do I change the transcription language?</span></summary>
-      <div class="body">
-        <p class="fr">Deux endroits : le sélecteur de langue directement sur l'écran d'enregistrement, pour une note en particulier, et Réglages → Transcription → Langue par défaut, pour toutes les suivantes. La langue de l'interface se change au même endroit, indépendamment de celle de l'appareil.</p>
-        <p class="en">Two places: the language picker on the recording screen, for one note, and Settings → Transcription → Default language, for every note after that. The interface language is set in the same place, independently of your device language.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary><span class="fr">La transcription passe-t-elle par internet&nbsp;?</span><span class="en">Does transcription go through the internet?</span></summary>
-      <div class="body">
-        <p class="fr">Elle utilise le service de reconnaissance vocale d'Apple, qui traite l'audio sur l'appareil ou sur les serveurs d'Apple selon la langue et le modèle disponible. Le compte-rendu intelligent, lui, s'exécute sur l'appareil. Le détail est dans la <a href="privacy.html">politique de confidentialité</a>.</p>
-        <p class="en">It uses Apple's speech recognition service, which processes audio either on device or on Apple's servers depending on the language and the available model. Smart Minutes, on the other hand, runs on device. The details are in the <a href="privacy.html">privacy policy</a>.</p>
-      </div>
-    </details>
-
-    <details>
-      <summary><span class="fr">Je veux un remboursement.</span><span class="en">I want a refund.</span></summary>
-      <div class="body">
-        <p class="fr">Les achats passent par Apple, et les remboursements aussi : va sur <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> avec ton identifiant Apple. Écris-moi si ça bloque, je t'aiderai à monter la demande.</p>
-        <p class="en">Purchases go through Apple, and so do refunds: go to <a href="https://reportaproblem.apple.com">reportaproblem.apple.com</a> with your Apple Account. Write to me if you get stuck and I will help you file it.</p>
-      </div>
-    </details>
-  </section>
-</div>
+  </div>
+</section>
 
 <footer>
   <div class="wrap">
-    <a href="privacy.html"><span class="fr">Politique de confidentialité</span><span class="en">Privacy policy</span></a>
+    <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="26" height="26" style="width:26px;height:26px"><span>NotaVox</span></a>
+    <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
     <a href="mailto:sramezani52@gmail.com?subject=NotaVox">sramezani52@gmail.com</a>
-    <span class="right">NotaVox 1.0 · iOS 18+</span>
+    <span class="right" data-i18n="foot.rights">Application indépendante pour iPhone et iPad.</span>
   </div>
 </footer>
 

@@ -128,6 +128,26 @@
       </div>
 
       <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><rect x="7" y="5" width="10" height="14" rx="3"/><path d="M9.5 2.5h5M9.5 21.5h5"/></svg>
+        <h3 data-i18n="f5t">Apple Watch</h3>
+        <p data-i18n="f5p">Enregistre au poignet, la note arrive sur l'iPhone.</p>
+        <ul>
+          <li data-i18n="f5a">Transfert même si l'app iPhone est fermée</li>
+          <li data-i18n="f5b">Transcription faite par l'iPhone, comme d'habitude</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4v6a4 4 0 004 4h6M19 4v6a4 4 0 01-4 4H9M12 14v6"/></svg>
+        <h3 data-i18n="f6t">Fusionner</h3>
+        <p data-i18n="f6p">Plusieurs notes éparses deviennent une seule note claire.</p>
+        <ul>
+          <li data-i18n="f6a">Bout à bout, ou réunies et structurées par l'IA</li>
+          <li data-i18n="f6b">Les notes d'origine sont conservées</li>
+        </ul>
+      </div>
+
+      <div class="card">
         <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7a2 2 0 012-2h3l2 2h7a2 2 0 012 2v8a2 2 0 01-2 2H6a2 2 0 01-2-2z"/></svg>
         <h3 data-i18n="f4t">Organiser</h3>
         <p data-i18n="f4p">Une note se retrouve en quelques secondes, même six mois après.</p>
@@ -149,16 +169,16 @@
     </div>
     <div class="showcase">
       <figure>
-        <img src="assets/fr-02-transcript.png" width="620" height="1062" loading="lazy" alt="Transcription d'une note dans NotaVox, avec le lecteur audio.">
+        <img src="assets/fr-transcript.png" width="620" height="1347" loading="lazy" alt="Transcription d'une note dans NotaVox, avec le lecteur audio.">
         <figcaption><b data-i18n="shots.c1t">La transcription</b><span data-i18n="shots.c1p">Le texte complet, relisible et modifiable, avec le lecteur audio au-dessus.</span></figcaption>
       </figure>
       <figure>
-        <img src="assets/fr-03-minutes.png" width="620" height="1062" loading="lazy" alt="Compte-rendu intelligent : résumé, décisions, actions et questions.">
+        <img src="assets/fr-minutes.png" width="620" height="1347" loading="lazy" alt="Compte-rendu intelligent : résumé, décisions, actions et questions.">
         <figcaption><b data-i18n="shots.c2t">Le compte-rendu</b><span data-i18n="shots.c2p">Résumé, décisions et actions détectées, avec un bouton pour les envoyer dans Rappels.</span></figcaption>
       </figure>
       <figure>
-        <img src="assets/fr-04-list.png" width="620" height="1062" loading="lazy" alt="Liste des notes vocales avec tags, favoris et recherche.">
-        <figcaption><b data-i18n="shots.c3t">Tes notes</b><span data-i18n="shots.c3p">Tags, favoris et recherche instantanée, sur les titres comme sur les transcriptions.</span></figcaption>
+        <img src="assets/fr-merge.png" width="620" height="1347" loading="lazy" alt="Écran de fusion : trois notes à ordonner et l'aperçu de la note obtenue.">
+        <figcaption><b data-i18n="shots.c3t">La fusion</b><span data-i18n="shots.c3p">Trois notes prises trois jours différents, réunies en une seule, l'aperçu avant de valider.</span></figcaption>
       </figure>
     </div>
   </div>
@@ -194,6 +214,8 @@
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l2">Actions et questions en suspens</span></li>
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l3">Reformulation dans le ton de ton choix</span></li>
           <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l4">Questions et réponses sur ta note</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l5">Fusion de notes et questions sur l'ensemble</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l6">Enregistrement depuis l'Apple Watch, dossier iCloud Drive</span></li>
         </ul>
       </div>
 
@@ -256,6 +278,10 @@
         <div class="body"><p data-i18n="faq.a3">Ouvre l'écran du compte-rendu intelligent et touche « Restaurer les achats ». L'achat est lié à ton identifiant Apple : il te suit sur tous tes appareils, sans repayer.</p></div>
       </details>
       <details>
+        <summary data-i18n="faq.q7">Comment enregistrer depuis l'Apple Watch ?</summary>
+        <div class="body"><p data-i18n="faq.a7">Ouvre NotaVox sur la montre et touche le micro. À l'arrêt, l'enregistrement part vers l'iPhone, qui le transcrit et crée la note — même si l'app y est fermée. Si le téléphone est loin, le transfert attend et repart tout seul. L'enregistrement au poignet fait partie de l'achat intégré.</p></div>
+      </details>
+      <details>
         <summary data-i18n="faq.q4">Comment changer la langue de transcription ?</summary>
         <div class="body"><p data-i18n="faq.a4">Deux endroits : le sélecteur sur l'écran d'enregistrement, pour une note en particulier, et Réglages → Transcription → Langue par défaut, pour toutes les suivantes. La langue de l'interface se règle au même endroit, indépendamment de celle de l'appareil.</p></div>
       </details>
@@ -276,7 +302,7 @@
     <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="26" height="26" style="width:26px;height:26px"><span>NotaVox</span></a>
     <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
     <a href="mailto:sramezani52@gmail.com?subject=NotaVox">sramezani52@gmail.com</a>
-    <span class="right" data-i18n="foot.rights">Application indépendante pour iPhone et iPad.</span>
+    <span class="right" data-i18n="foot.rights">Application indépendante pour iPhone, iPad et Apple Watch.</span>
   </div>
 </footer>
 

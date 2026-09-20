@@ -60,7 +60,11 @@ var I18N = {
     "pro.l5":"Fusion de notes et questions sur l'ensemble",
     "pro.l6":"Enregistrement depuis l'Apple Watch, dossier iCloud Drive",
     "faq.q7":"Comment enregistrer depuis l'Apple Watch ?",
-    "faq.a7":"Ouvre NotaVox sur la montre et touche le micro. À l'arrêt, l'enregistrement part vers l'iPhone, qui le transcrit et crée la note — même si l'app y est fermée. Si le téléphone est loin, le transfert attend et repart tout seul. L'enregistrement au poignet fait partie de l'achat intégré."
+    "faq.a7":"Ouvre NotaVox sur la montre et touche le micro. À l'arrêt, l'enregistrement part vers l'iPhone, qui le transcrit et crée la note — même si l'app y est fermée. Si le téléphone est loin, le transfert attend et repart tout seul. L'enregistrement au poignet fait partie de l'achat intégré.",
+    "alt.record":"Écran d'enregistrement de NotaVox : forme d'onde, minuteur et bouton d'enregistrement.",
+    "alt.transcript":"Transcription d'une note dans NotaVox, avec le lecteur audio.",
+    "alt.minutes":"Compte-rendu intelligent : résumé, décisions, actions et questions.",
+    "alt.merge":"Écran de fusion : trois notes à ordonner et l'aperçu de la note obtenue."
   },
   en: {
     "nav.features":"Features","nav.screens":"In the app","nav.pricing":"Pricing","nav.faq":"Support","nav.privacy":"Privacy",
@@ -121,7 +125,11 @@ var I18N = {
     "pro.l5":"Note merging and questions across all notes",
     "pro.l6":"Recording from the Apple Watch, iCloud Drive folder",
     "faq.q7":"How do I record from the Apple Watch?",
-    "faq.a7":"Open NotaVox on the watch and tap the microphone. When you stop, the recording goes to the iPhone, which transcribes it and writes the note — even with the app closed there. If the phone is out of range, the transfer waits and resumes on its own. Recording from the wrist is part of the in-app purchase."
+    "faq.a7":"Open NotaVox on the watch and tap the microphone. When you stop, the recording goes to the iPhone, which transcribes it and writes the note — even with the app closed there. If the phone is out of range, the transfer waits and resumes on its own. Recording from the wrist is part of the in-app purchase.",
+    "alt.record":"NotaVox recording screen: waveform, timer and record button.",
+    "alt.transcript":"A note's transcript in NotaVox, with the audio player.",
+    "alt.minutes":"Smart minutes: summary, decisions, action items and open questions.",
+    "alt.merge":"The merge screen: three notes to order, and a preview of the note they become."
   },
   de: {
     "nav.features":"Funktionen","nav.screens":"In der App","nav.pricing":"Preise","nav.faq":"Support","nav.privacy":"Datenschutz",
@@ -182,7 +190,11 @@ var I18N = {
     "pro.l5":"Notizen zusammenführen und Fragen über alle Notizen",
     "pro.l6":"Aufnahme von der Apple Watch, iCloud Drive-Ordner",
     "faq.q7":"Wie nehme ich mit der Apple Watch auf?",
-    "faq.a7":"Öffne NotaVox auf der Uhr und tippe auf das Mikrofon. Beim Stoppen geht die Aufnahme ans iPhone, das sie transkribiert und die Notiz schreibt — auch bei geschlossener App. Ist das iPhone außer Reichweite, wartet die Übertragung und läuft von selbst weiter. Die Aufnahme am Handgelenk gehört zum In-App-Kauf."
+    "faq.a7":"Öffne NotaVox auf der Uhr und tippe auf das Mikrofon. Beim Stoppen geht die Aufnahme ans iPhone, das sie transkribiert und die Notiz schreibt — auch bei geschlossener App. Ist das iPhone außer Reichweite, wartet die Übertragung und läuft von selbst weiter. Die Aufnahme am Handgelenk gehört zum In-App-Kauf.",
+    "alt.record":"Aufnahmebildschirm von NotaVox: Wellenform, Timer und Aufnahmetaste.",
+    "alt.transcript":"Transkript einer Notiz in NotaVox, mit dem Audioplayer.",
+    "alt.minutes":"Smart Minutes: Zusammenfassung, Entscheidungen, Aufgaben und offene Fragen.",
+    "alt.merge":"Der Zusammenführen-Bildschirm: drei Notizen sortieren und die Vorschau der neuen Notiz."
   },
   es: {
     "nav.features":"Funciones","nav.screens":"En la app","nav.pricing":"Precios","nav.faq":"Soporte","nav.privacy":"Privacidad",
@@ -243,7 +255,11 @@ var I18N = {
     "pro.l5":"Fusión de notas y preguntas sobre todas ellas",
     "pro.l6":"Grabación desde el Apple Watch y carpeta en iCloud Drive",
     "faq.q7":"¿Cómo grabo desde el Apple Watch?",
-    "faq.a7":"Abre NotaVox en el reloj y toca el micrófono. Al detener, la grabación va al iPhone, que la transcribe y crea la nota, incluso con la app cerrada. Si el teléfono está lejos, la transferencia espera y se reanuda sola. Grabar desde la muñeca forma parte de la compra integrada."
+    "faq.a7":"Abre NotaVox en el reloj y toca el micrófono. Al detener, la grabación va al iPhone, que la transcribe y crea la nota, incluso con la app cerrada. Si el teléfono está lejos, la transferencia espera y se reanuda sola. Grabar desde la muñeca forma parte de la compra integrada.",
+    "alt.record":"Pantalla de grabación de NotaVox: onda, temporizador y botón de grabar.",
+    "alt.transcript":"Transcripción de una nota en NotaVox, con el reproductor de audio.",
+    "alt.minutes":"Acta inteligente: resumen, decisiones, tareas y preguntas pendientes.",
+    "alt.merge":"Pantalla de fusión: tres notas para ordenar y la vista previa de la nota resultante."
   }
 };
 
@@ -264,6 +280,14 @@ var I18N = {
       var v = dict[nodes[i].getAttribute("data-i18n")];
       if (v) { nodes[i].textContent = v; }
     }
+    // Les captures existent dans les quatre langues : elles suivent le choix.
+    var shots = document.querySelectorAll("[data-img]");
+    for (var k = 0; k < shots.length; k++) {
+      shots[k].setAttribute("src", "assets/" + l + "-" + shots[k].getAttribute("data-img") + ".png");
+      var alt = dict[shots[k].getAttribute("data-alt")];
+      if (alt) { shots[k].setAttribute("alt", alt); }
+    }
+
     var btns = document.querySelectorAll(".langs button");
     for (var j = 0; j < btns.length; j++) {
       btns[j].setAttribute("aria-pressed", String(btns[j].getAttribute("data-lang") === l));

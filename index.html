@@ -3,12 +3,26 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>NotaVox — notes vocales, transcription et comptes-rendus</title>
-<meta name="description" content="NotaVox transforme tes enregistrements vocaux en notes structurées : transcription en quatre langues et compte-rendu intelligent sur iPhone et iPad. Support et confidentialité.">
+<title>NotaVox — notes vocales, transcription et comptes-rendus sur l'appareil</title>
+<meta name="description" content="NotaVox enregistre, transcrit et structure tes notes vocales sur iPhone, iPad et Apple Watch. Tout se passe sur l'appareil : pas de compte, pas de serveur, pas de suivi. 4,99 €, achat unique, tout est inclus.">
 <meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://xerxex52.github.io/NotaVox-site/">
+
 <meta property="og:title" content="NotaVox — ta voix devient une note structurée">
-<meta property="og:description" content="Enregistre, transcris, et récupère un compte-rendu : résumé, décisions, actions. Sans compte, sans publicité, sans suivi.">
+<meta property="og:description" content="Enregistre, transcris, récupère un compte-rendu : résumé, décisions, actions. Tout se passe sur ton appareil — pas de compte, pas de serveur, pas de suivi. 4,99 €, achat unique.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://xerxex52.github.io/NotaVox-site/">
+<meta property="og:site_name" content="NotaVox">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:image" content="https://xerxex52.github.io/NotaVox-site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="NotaVox — notes vocales, transcription et comptes-rendus sur iPhone, iPad et Apple Watch.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NotaVox — ta voix devient une note structurée">
+<meta name="twitter:description" content="Enregistre, transcris, récupère un compte-rendu. Tout se passe sur ton appareil : pas de compte, pas de serveur, pas de suivi.">
+<meta name="twitter:image" content="https://xerxex52.github.io/NotaVox-site/assets/og.png">
+
 <link rel="icon" href="assets/icon.png">
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -22,19 +36,22 @@
 <div class="topbar">
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/icon.png" alt=""><span>NotaVox</span></a>
-    <nav class="nav">
+    <nav class="nav" aria-label="Sections">
       <a href="#fonctionnalites" data-i18n="nav.features">Fonctionnalités</a>
       <a href="#ecrans" data-i18n="nav.screens">Dans l'app</a>
-      <a href="#offres" data-i18n="nav.pricing">Offres</a>
+      <a href="#prix" data-i18n="nav.pricing">Prix</a>
       <a href="#support" data-i18n="nav.faq">Support</a>
       <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
+    </nav>
+    <div class="bar-actions">
       <div class="langs" role="group" aria-label="Langue">
         <button type="button" data-lang="fr" aria-pressed="true">fr</button>
         <button type="button" data-lang="en" aria-pressed="false">en</button>
         <button type="button" data-lang="de" aria-pressed="false">de</button>
         <button type="button" data-lang="es" aria-pressed="false">es</button>
       </div>
-    </nav>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6801285443" data-i18n="nav.get">Télécharger</a>
+    </div>
   </div>
 </div>
 
@@ -42,14 +59,16 @@
   <div class="wrap">
     <div class="hero-grid">
       <div>
-        <p class="eyebrow" data-i18n="hero.eyebrow">Bientôt sur l'App Store · iPhone et iPad</p>
+        <p class="eyebrow" data-i18n="hero.eyebrow">Sur l'App Store · iPhone, iPad et Apple Watch</p>
         <h1 data-i18n="hero.title">Ta voix devient une note structurée.</h1>
-        <p class="lead" data-i18n="hero.lead">Enregistre une réunion, une idée ou un cours. NotaVox transcrit, résume, et fait ressortir les décisions et les actions.</p>
+        <p class="lead" data-i18n="hero.lead">Enregistre une réunion, une idée ou un cours. NotaVox transcrit, résume, et fait ressortir les décisions et les actions — sur ton appareil, sans jamais passer par un serveur.</p>
         <div class="cta">
-          <a class="btn btn-primary" href="#fonctionnalites" data-i18n="hero.cta1">Voir les fonctionnalités</a>
-          <a class="btn btn-ghost" href="#support" data-i18n="hero.cta2">Écrire au support</a>
+          <a class="btn btn-primary" href="https://apps.apple.com/app/id6801285443" data-i18n="hero.cta1">Télécharger sur l'App Store</a>
+          <a class="btn btn-ghost" href="#fonctionnalites" data-i18n="hero.cta2">Voir les fonctionnalités</a>
         </div>
+        <p class="cta-note" data-i18n="hero.note">4,99 € · achat unique · tout est inclus</p>
         <div class="trust">
+          <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t4">Tout sur l'appareil</span></span>
           <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t1">Aucun compte</span></span>
           <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t2">Aucune publicité</span></span>
           <span><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="hero.t3">Aucun suivi</span></span>
@@ -110,10 +129,10 @@
       <div class="card">
         <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 11h16M4 16h9"/></svg>
         <h3 data-i18n="f2t">Transcrire</h3>
-        <p data-i18n="f2p">Quatre langues, détectées jusque dans une même phrase.</p>
+        <p data-i18n="f2p">Quatre langues, une par enregistrement.</p>
         <ul>
           <li data-i18n="f2a">Français, anglais, allemand, espagnol</li>
-          <li data-i18n="f2b">Résumé et actions détectées, sans achat</li>
+          <li data-i18n="f2b">Résumé et actions détectées dès la fin de l'enregistrement</li>
         </ul>
       </div>
 
@@ -152,8 +171,8 @@
         <h3 data-i18n="f4t">Organiser</h3>
         <p data-i18n="f4p">Une note se retrouve en quelques secondes, même six mois après.</p>
         <ul>
-          <li data-i18n="f4a">Tags, favoris, dossiers, recherche instantanée</li>
-          <li data-i18n="f4b">Rappels, partage et export</li>
+          <li data-i18n="f4a">Rubriques personnalisées, favoris, dossiers, recherche</li>
+          <li data-i18n="f4b">Rappels des actions en attente, partage et export</li>
         </ul>
       </div>
 
@@ -184,74 +203,68 @@
   </div>
 </section>
 
-<section id="offres">
-  <div class="wrap">
-    <div class="sec-head">
-      <p class="eyebrow" data-i18n="plans.eyebrow">Les offres</p>
-      <h2 data-i18n="plans.title">Gratuit pour l'essentiel. Un seul achat pour le reste.</h2>
-      <p class="lead" data-i18n="plans.lead">Pas d'abonnement, pas de crédits à recharger. L'achat est lié à ton identifiant Apple et te suit sur tes appareils.</p>
-    </div>
-    <div class="plans">
-
-      <div class="plan">
-        <span class="tag" data-i18n="free.tag">L'application</span>
-        <p class="price" data-i18n="free.price">Gratuit</p>
-        <p data-i18n="free.sub">Tout ce qu'il faut pour enregistrer, transcrire et relire.</p>
-        <ul>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l1">Enregistrement illimité</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l2">Transcription en 4 langues</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l3">Résumé et actions détectées</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="free.l4">Tags, dossiers, recherche, partage</span></li>
-        </ul>
-      </div>
-
-      <div class="plan featured">
-        <span class="tag" data-i18n="pro.tag">Achat intégré</span>
-        <p class="price"><span data-i18n="pro.price">4,99 €</span><small data-i18n="pro.once">une seule fois</small></p>
-        <p data-i18n="pro.sub">Le compte-rendu intelligent, propulsé par Apple Intelligence.</p>
-        <ul>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l1">Résumé exécutif et décisions</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l2">Actions et questions en suspens</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l3">Reformulation dans le ton de ton choix</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l4">Questions et réponses sur ta note</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l5">Fusion de notes et questions sur l'ensemble</span></li>
-          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="pro.l6">Enregistrement depuis l'Apple Watch, dossier iCloud Drive</span></li>
-        </ul>
-      </div>
-
-    </div>
-    <p class="plan-note" data-i18n="plans.note">Ces trois fonctions demandent Apple Intelligence (iOS 26 sur un appareil compatible). Sur un appareil qui ne le gère pas, l'app l'indique et ne propose pas l'achat.</p>
-  </div>
-</section>
-
 <section class="deep">
   <div class="wrap">
     <div class="sec-head">
-      <p class="eyebrow" data-i18n="priv.eyebrow">Confidentialité</p>
-      <h2 data-i18n="priv.title">Pas de compte. Pas de serveur. Pas de suivi.</h2>
+      <p class="eyebrow" data-i18n="priv.eyebrow">Sur l'appareil</p>
+      <h2 data-i18n="priv.title">Tout se passe sur ton appareil. Rien ne part sur un serveur.</h2>
+      <p class="lead" data-i18n="priv.lead">NotaVox n'a pas de serveur, pas de compte, pas de clé d'API. Tes réunions, tes idées et tes cours restent chez toi : c'est ce qui distingue l'app des services de transcription en ligne.</p>
     </div>
     <div class="privacy-grid">
       <div>
         <span class="k" data-i18n="priv.k1">Stockage</span>
         <h3 data-i18n="priv.h1">Tout reste dans l'app</h3>
-        <p data-i18n="priv.p1">Enregistrements, transcriptions et tags vivent sur ton appareil. NotaVox n'a pas de serveur : rien ne m'est envoyé.</p>
+        <p data-i18n="priv.p1">Enregistrements, transcriptions et rubriques vivent sur ton appareil. NotaVox n'a pas de serveur : rien ne m'est envoyé.</p>
       </div>
       <div>
         <span class="k" data-i18n="priv.k2">Transcription</span>
-        <h3 data-i18n="priv.h2">Le service d'Apple</h3>
-        <p data-i18n="priv.p2">La reconnaissance vocale d'Apple traite l'audio sur l'appareil ou sur ses serveurs selon la langue. C'est écrit noir sur blanc dans la politique.</p>
+        <h3 data-i18n="priv.h2">Calculée sur l'iPhone</h3>
+        <p data-i18n="priv.p2">Sur iOS 26, la transcription tourne entièrement sur l'appareil, sans limite de durée et sans réseau. Sur iOS 18 à 25, elle passe par le service de reconnaissance vocale d'Apple.</p>
       </div>
       <div>
         <span class="k" data-i18n="priv.k3">Apple Intelligence</span>
-        <h3 data-i18n="priv.h3">Sur l'appareil</h3>
-        <p data-i18n="priv.p3">Le compte-rendu, la reformulation et les questions/réponses s'exécutent en local, via le modèle du système.</p>
+        <h3 data-i18n="priv.h3">Modèle local</h3>
+        <p data-i18n="priv.p3">Compte-rendu, reformulation, fusion et questions s'exécutent via le modèle du système, sur l'appareil.</p>
       </div>
     </div>
     <p style="margin-top:34px"><a href="privacy.html" style="color:var(--deep-accent)" data-i18n="priv.link">Lire la politique de confidentialité</a></p>
   </div>
 </section>
 
-<section id="support">
+<section id="prix">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-i18n="plans.eyebrow">Le prix</p>
+      <h2 data-i18n="plans.title">Un seul prix. Tout est inclus.</h2>
+      <p class="lead" data-i18n="plans.lead">Pas d'abonnement, pas d'achat intégré, pas de crédits à recharger. Tu achètes l'app une fois, et toutes les fonctions sont là dès la première ouverture.</p>
+    </div>
+    <div class="plans solo">
+
+      <div class="plan featured solo-card">
+        <span class="tag" data-i18n="buy.tag">L'application</span>
+        <p class="price"><span data-i18n="buy.price">4,99 €</span><small data-i18n="buy.once">achat unique</small></p>
+        <p data-i18n="buy.sub">Tout ce que fait NotaVox, sans rien à débloquer ensuite.</p>
+        <ul>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l1">Enregistrement et transcription illimités, en 4 langues</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l2">Compte-rendu intelligent : résumé, décisions, actions, questions</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l3">Reformulation et questions/réponses sur une note</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l4">Fusion de notes et questions sur l'ensemble</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l5">Enregistrement depuis l'Apple Watch</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l6">Import d'un enregistrement déjà sur ton appareil</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l7">Dossier iCloud Drive, partage et export PDF</span></li>
+          <li><svg class="tick" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg><span data-i18n="buy.l8">Rubriques, favoris, dossiers, recherche et rappels</span></li>
+        </ul>
+        <div class="cta">
+          <a class="btn btn-primary" href="https://apps.apple.com/app/id6801285443" data-i18n="buy.cta">Télécharger sur l'App Store</a>
+        </div>
+      </div>
+
+    </div>
+    <p class="plan-note" data-i18n="plans.note">Le compte-rendu, la fusion intelligente et les questions demandent Apple Intelligence (iOS 26 sur un appareil compatible). Sur un appareil qui ne le gère pas, l'app l'indique ; l'enregistrement, la transcription, la montre et l'organisation fonctionnent normalement.</p>
+  </div>
+</section>
+
+<section id="support" style="background:var(--panel); border-top:1px solid var(--stroke)">
   <div class="wrap">
     <div class="faq-col">
       <div class="sec-head">
@@ -270,28 +283,32 @@
         <div class="body"><p data-i18n="faq.a1">Dans l'app, sur ton appareil. NotaVox n'a pas de serveur : rien n'est envoyé au développeur. Supprimer une note supprime son fichier audio ; désinstaller l'app supprime tout.</p></div>
       </details>
       <details>
-        <summary data-i18n="faq.q2">Le compte-rendu intelligent n'apparaît pas.</summary>
-        <div class="body"><p data-i18n="faq.a2">Cette fonction utilise Apple Intelligence, qui demande iOS 26 sur un appareil compatible. Ailleurs, la carte reste visible mais indique que la fonction n'est pas disponible, et l'achat n'est pas proposé : tu ne peux jamais payer pour une fonction que ton appareil ne peut pas exécuter.</p></div>
+        <summary data-i18n="faq.q8">Qu'est-ce que l'achat comprend ?</summary>
+        <div class="body"><p data-i18n="faq.a8">Tout. L'app s'achète une fois 4,99 € sur l'App Store et il n'y a plus rien à payer ensuite : ni abonnement, ni achat intégré, ni crédits. Les mises à jour sont comprises, et l'app fonctionne sur ton iPhone, ton iPad et ton Apple Watch avec le même achat.</p></div>
       </details>
       <details>
-        <summary data-i18n="faq.q3">J'ai changé d'iPhone, comment récupérer mon achat ?</summary>
-        <div class="body"><p data-i18n="faq.a3">Ouvre l'écran du compte-rendu intelligent et touche « Restaurer les achats ». L'achat est lié à ton identifiant Apple : il te suit sur tous tes appareils, sans repayer.</p></div>
+        <summary data-i18n="faq.q2">Le compte-rendu intelligent n'apparaît pas.</summary>
+        <div class="body"><p data-i18n="faq.a2">Cette fonction utilise Apple Intelligence, qui demande iOS 26 sur un appareil compatible. Ailleurs, la carte reste visible et indique que la fonction n'est pas disponible ; l'enregistrement, la transcription, l'organisation et la montre fonctionnent normalement.</p></div>
+      </details>
+      <details>
+        <summary data-i18n="faq.q3">J'ai changé d'iPhone. Dois-je repayer ?</summary>
+        <div class="body"><p data-i18n="faq.a3">Non. L'app est liée à ton identifiant Apple : ouvre l'App Store, va dans ton compte, « Achetés », et retélécharge NotaVox. Le partage familial fonctionne aussi.</p></div>
       </details>
       <details>
         <summary data-i18n="faq.q7">Comment enregistrer depuis l'Apple Watch ?</summary>
-        <div class="body"><p data-i18n="faq.a7">Ouvre NotaVox sur la montre et touche le micro. À l'arrêt, l'enregistrement part vers l'iPhone, qui le transcrit et crée la note — même si l'app y est fermée. Si le téléphone est loin, le transfert attend et repart tout seul. L'enregistrement au poignet fait partie de l'achat intégré.</p></div>
+        <div class="body"><p data-i18n="faq.a7">Ouvre NotaVox sur la montre et touche le micro. À l'arrêt, l'enregistrement part vers l'iPhone, qui le transcrit et crée la note — même si l'app y est fermée. Si le téléphone est loin, le transfert attend et repart tout seul.</p></div>
       </details>
       <details>
         <summary data-i18n="faq.q4">Comment changer la langue de transcription ?</summary>
-        <div class="body"><p data-i18n="faq.a4">Deux endroits : le sélecteur sur l'écran d'enregistrement, pour une note en particulier, et Réglages → Transcription → Langue par défaut, pour toutes les suivantes. La langue de l'interface se règle au même endroit, indépendamment de celle de l'appareil.</p></div>
+        <div class="body"><p data-i18n="faq.a4">Deux endroits : le sélecteur sur l'écran d'enregistrement, pour une note en particulier, et Réglages → Transcription → Langue par défaut, pour toutes les suivantes. Une note est transcrite dans une seule langue : choisis celle qui est parlée. La langue de l'interface se règle au même endroit, indépendamment de celle de l'appareil.</p></div>
       </details>
       <details>
         <summary data-i18n="faq.q5">La transcription passe-t-elle par internet ?</summary>
-        <div class="body"><p data-i18n="faq.a5">Elle utilise le service de reconnaissance vocale d'Apple, qui traite l'audio sur l'appareil ou sur les serveurs d'Apple selon la langue et le modèle disponible. Le compte-rendu intelligent, lui, s'exécute sur l'appareil.</p></div>
+        <div class="body"><p data-i18n="faq.a5">Sur iOS 26, non : elle se fait entièrement sur l'appareil, quelle que soit la durée. Sur iOS 18 à 25, elle utilise le service de reconnaissance vocale d'Apple, qui peut traiter l'audio sur les serveurs d'Apple selon la langue. Le compte-rendu, lui, reste toujours sur l'appareil, et rien ne part jamais chez le développeur.</p></div>
       </details>
       <details>
         <summary data-i18n="faq.q6">Je veux un remboursement.</summary>
-        <div class="body"><p data-i18n="faq.a6">Les achats passent par Apple, et les remboursements aussi : rends-toi sur reportaproblem.apple.com avec ton identifiant Apple. Écris-moi si ça bloque, je t'aiderai à monter la demande.</p></div>
+        <div class="body"><p data-i18n="faq.a6">L'achat passe par Apple, et le remboursement aussi : rends-toi sur reportaproblem.apple.com avec ton identifiant Apple. Écris-moi si ça bloque, je t'aiderai à monter la demande.</p></div>
       </details>
     </div>
   </div>
@@ -300,6 +317,7 @@
 <footer>
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="26" height="26" style="width:26px;height:26px"><span>NotaVox</span></a>
+    <a href="https://apps.apple.com/app/id6801285443" data-i18n="nav.get">Télécharger</a>
     <a href="privacy.html" data-i18n="nav.privacy">Confidentialité</a>
     <a href="mailto:sramezani52@gmail.com?subject=NotaVox">sramezani52@gmail.com</a>
     <span class="right" data-i18n="foot.rights">Application indépendante pour iPhone, iPad et Apple Watch.</span>

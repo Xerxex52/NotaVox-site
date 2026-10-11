@@ -4,8 +4,21 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>NotaVox — politique de confidentialité</title>
-<meta name="description" content="Politique de confidentialité de NotaVox : aucune collecte, aucun serveur, données conservées sur l'appareil.">
+<meta name="description" content="Politique de confidentialité de NotaVox : aucune collecte, aucun serveur, aucun suivi. Tout reste sur l'appareil.">
 <meta name="color-scheme" content="light dark">
+<link rel="canonical" href="https://xerxex52.github.io/NotaVox-site/privacy.html">
+<meta property="og:title" content="NotaVox — politique de confidentialité">
+<meta property="og:description" content="Aucune collecte, aucun serveur, aucun suivi : enregistrements et transcriptions restent sur ton appareil.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://xerxex52.github.io/NotaVox-site/privacy.html">
+<meta property="og:site_name" content="NotaVox">
+<meta property="og:image" content="https://xerxex52.github.io/NotaVox-site/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="NotaVox — politique de confidentialité">
+<meta name="twitter:description" content="Aucune collecte, aucun serveur, aucun suivi : tout reste sur ton appareil.">
+<meta name="twitter:image" content="https://xerxex52.github.io/NotaVox-site/assets/og.png">
 <link rel="icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,16 +31,20 @@
 <div class="topbar">
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/icon.png" alt=""><span>NotaVox</span></a>
-    <nav class="nav">
-      <a href="index.html#offres" data-i18n="nav.pricing">Offres</a>
+    <nav class="nav" aria-label="Sections">
+      <a href="index.html#fonctionnalites" data-i18n="nav.features">Fonctionnalités</a>
+      <a href="index.html#prix" data-i18n="nav.pricing">Prix</a>
       <a href="index.html#support" data-i18n="nav.faq">Support</a>
+    </nav>
+    <div class="bar-actions">
       <div class="langs" role="group" aria-label="Langue">
         <button type="button" data-lang="fr" aria-pressed="true">fr</button>
         <button type="button" data-lang="en" aria-pressed="false">en</button>
         <button type="button" data-lang="de" aria-pressed="false">de</button>
         <button type="button" data-lang="es" aria-pressed="false">es</button>
       </div>
-    </nav>
+      <a class="btn btn-primary btn-sm" href="https://apps.apple.com/app/id6801285443" data-i18n="nav.get">Télécharger</a>
+    </div>
   </div>
 </div>
 
@@ -35,9 +52,9 @@
   <article class="doc">
 
     <div data-lang-block="fr">
-      <p class="eyebrow">NotaVox pour iPhone et iPad</p>
+      <p class="eyebrow">NotaVox pour iPhone, iPad et Apple Watch</p>
       <h1>Politique de confidentialité</h1>
-      <p class="updated">Dernière mise à jour : 5 septembre 2026</p>
+      <p class="updated">Dernière mise à jour : 11 octobre 2026</p>
       <p class="intro">NotaVox ne collecte, ne stocke et ne transmet aucune donnée personnelle vers un serveur du développeur. L'application n'a ni compte utilisateur, ni publicité, ni outil d'analyse, ni traceur.</p>
 
       <h2>Données traitées sur ton appareil</h2>
@@ -48,10 +65,10 @@
 
       <h2>Services Apple utilisés</h2>
       <ul>
-        <li><b>Reconnaissance vocale (Speech)</b> — pour transcrire un enregistrement, l'audio est traité par le service de reconnaissance vocale d'Apple, sur l'appareil ou sur les serveurs d'Apple selon la langue et le modèle disponible. Ce traitement relève de la politique de confidentialité d'Apple. NotaVox n'y a pas accès.</li>
-        <li><b>Apple Intelligence (Foundation Models)</b> — le compte-rendu intelligent, la reformulation et les questions/réponses s'exécutent sur l'appareil.</li>
+        <li><b>Reconnaissance vocale (Speech)</b> — sur iOS 26, la transcription est calculée sur l'appareil par le moteur embarqué d'Apple : l'audio ne quitte pas le téléphone. Sur iOS 18 à 25, il est traité par le service de reconnaissance vocale d'Apple, sur l'appareil ou sur les serveurs d'Apple selon la langue et le modèle disponible. Ce traitement relève de la politique de confidentialité d'Apple. NotaVox n'y a pas accès.</li>
+        <li><b>Apple Intelligence (Foundation Models)</b> — le compte-rendu intelligent, la fusion de notes, la reformulation et les questions/réponses s'exécutent sur l'appareil.</li>
         <li><b>Rappels (EventKit)</b> — un rappel n'est créé que lorsque tu le demandes explicitement, en touchant le bouton correspondant.</li>
-        <li><b>Achats intégrés (StoreKit)</b> — la transaction est gérée par Apple. NotaVox ne reçoit aucune donnée de paiement.</li>
+        <li><b>Achat de l'application (App Store)</b> — NotaVox est une application payante, achetée une seule fois sur l'App Store ; elle ne contient aucun achat intégré. La transaction est gérée par Apple, et NotaVox ne reçoit aucune donnée de paiement.</li>
       </ul>
 
       <h2>Autorisations demandées</h2>
@@ -76,9 +93,9 @@
     </div>
 
     <div data-lang-block="en">
-      <p class="eyebrow">NotaVox for iPhone and iPad</p>
+      <p class="eyebrow">NotaVox for iPhone, iPad and Apple Watch</p>
       <h1>Privacy policy</h1>
-      <p class="updated">Last updated: September 5, 2026</p>
+      <p class="updated">Last updated: October 11, 2026</p>
       <p class="intro">NotaVox does not collect, store, or transmit any personal data to a server operated by the developer. The app has no user account, no advertising, no analytics, and no trackers.</p>
 
       <h2>Data processed on your device</h2>
@@ -89,10 +106,10 @@
 
       <h2>Apple services used</h2>
       <ul>
-        <li><b>Speech recognition (Speech)</b> — to transcribe a recording, audio is processed by Apple's speech recognition service, either on device or on Apple's servers depending on the language and the available model. That processing is governed by Apple's privacy policy. NotaVox has no access to it.</li>
-        <li><b>Apple Intelligence (Foundation Models)</b> — Smart Minutes, rewriting, and question answering run on device.</li>
+        <li><b>Speech recognition (Speech)</b> — on iOS 26 the transcription is computed on the device by Apple's built-in engine: the audio never leaves the phone. On iOS 18 to 25 it is processed by Apple's speech recognition service, either on device or on Apple's servers depending on the language and the available model. That processing is governed by Apple's privacy policy. NotaVox has no access to it.</li>
+        <li><b>Apple Intelligence (Foundation Models)</b> — Smart Minutes, note merging, rewriting, and question answering run on device.</li>
         <li><b>Reminders (EventKit)</b> — a reminder is created only when you explicitly ask for it by tapping the corresponding button.</li>
-        <li><b>In-app purchases (StoreKit)</b> — the transaction is handled by Apple. NotaVox receives no payment data.</li>
+        <li><b>App purchase (App Store)</b> — NotaVox is a paid app, bought once on the App Store; it contains no in-app purchase. The transaction is handled by Apple, and NotaVox receives no payment data.</li>
       </ul>
 
       <h2>Permissions requested</h2>
@@ -117,9 +134,9 @@
     </div>
 
     <div data-lang-block="de">
-      <p class="eyebrow">NotaVox für iPhone und iPad</p>
+      <p class="eyebrow">NotaVox für iPhone, iPad und Apple Watch</p>
       <h1>Datenschutzerklärung</h1>
-      <p class="updated">Zuletzt aktualisiert: 5. September 2026</p>
+      <p class="updated">Zuletzt aktualisiert: 11. Oktober 2026</p>
       <p class="intro">NotaVox erhebt, speichert und überträgt keine personenbezogenen Daten an einen Server des Entwicklers. Die App hat kein Benutzerkonto, keine Werbung, keine Analysewerkzeuge und keine Tracker.</p>
 
       <h2>Auf deinem Gerät verarbeitete Daten</h2>
@@ -130,10 +147,10 @@
 
       <h2>Genutzte Apple-Dienste</h2>
       <ul>
-        <li><b>Spracherkennung (Speech)</b> — zum Transkribieren wird das Audio von Apples Spracherkennung verarbeitet, je nach Sprache und verfügbarem Modell auf dem Gerät oder auf Apples Servern. Für diese Verarbeitung gilt Apples Datenschutzerklärung. NotaVox hat darauf keinen Zugriff.</li>
-        <li><b>Apple Intelligence (Foundation Models)</b> — Smart Minutes, Umformulierung und Fragen/Antworten laufen auf dem Gerät.</li>
+        <li><b>Spracherkennung (Speech)</b> — unter iOS 26 wird die Transkription von Apples integrierter Engine auf dem Gerät berechnet: das Audio verlässt das Telefon nicht. Unter iOS 18 bis 25 verarbeitet es Apples Spracherkennung, je nach Sprache und verfügbarem Modell auf dem Gerät oder auf Apples Servern. Für diese Verarbeitung gilt Apples Datenschutzerklärung. NotaVox hat darauf keinen Zugriff.</li>
+        <li><b>Apple Intelligence (Foundation Models)</b> — Smart Minutes, das Zusammenführen von Notizen, Umformulierung und Fragen/Antworten laufen auf dem Gerät.</li>
         <li><b>Erinnerungen (EventKit)</b> — eine Erinnerung wird nur erstellt, wenn du sie ausdrücklich über die entsprechende Taste anforderst.</li>
-        <li><b>In-App-Käufe (StoreKit)</b> — die Transaktion wickelt Apple ab. NotaVox erhält keine Zahlungsdaten.</li>
+        <li><b>Kauf der App (App Store)</b> — NotaVox ist eine kostenpflichtige App, die einmalig im App Store gekauft wird; sie enthält keine In-App-Käufe. Die Transaktion wickelt Apple ab, und NotaVox erhält keine Zahlungsdaten.</li>
       </ul>
 
       <h2>Angeforderte Berechtigungen</h2>
@@ -158,9 +175,9 @@
     </div>
 
     <div data-lang-block="es">
-      <p class="eyebrow">NotaVox para iPhone y iPad</p>
+      <p class="eyebrow">NotaVox para iPhone, iPad y Apple Watch</p>
       <h1>Política de privacidad</h1>
-      <p class="updated">Última actualización: 5 de septiembre de 2026</p>
+      <p class="updated">Última actualización: 11 de octubre de 2026</p>
       <p class="intro">NotaVox no recopila, almacena ni transmite ningún dato personal a un servidor del desarrollador. La app no tiene cuenta de usuario, ni publicidad, ni herramientas de análisis, ni rastreadores.</p>
 
       <h2>Datos procesados en tu dispositivo</h2>
@@ -171,10 +188,10 @@
 
       <h2>Servicios de Apple utilizados</h2>
       <ul>
-        <li><b>Reconocimiento de voz (Speech)</b> — para transcribir una grabación, el audio lo procesa el servicio de reconocimiento de voz de Apple, en el dispositivo o en sus servidores según el idioma y el modelo disponible. Ese tratamiento se rige por la política de privacidad de Apple. NotaVox no tiene acceso a él.</li>
-        <li><b>Apple Intelligence (Foundation Models)</b> — el acta inteligente, la reescritura y las preguntas y respuestas se ejecutan en el dispositivo.</li>
+        <li><b>Reconocimiento de voz (Speech)</b> — en iOS 26 la transcripción la calcula en el dispositivo el motor integrado de Apple: el audio no sale del teléfono. En iOS 18 a 25 lo procesa el servicio de reconocimiento de voz de Apple, en el dispositivo o en sus servidores según el idioma y el modelo disponible. Ese tratamiento se rige por la política de privacidad de Apple. NotaVox no tiene acceso a él.</li>
+        <li><b>Apple Intelligence (Foundation Models)</b> — el acta inteligente, la fusión de notas, la reescritura y las preguntas y respuestas se ejecutan en el dispositivo.</li>
         <li><b>Recordatorios (EventKit)</b> — solo se crea un recordatorio cuando lo pides explícitamente, tocando el botón correspondiente.</li>
-        <li><b>Compras integradas (StoreKit)</b> — la transacción la gestiona Apple. NotaVox no recibe ningún dato de pago.</li>
+        <li><b>Compra de la aplicación (App Store)</b> — NotaVox es una app de pago, que se compra una sola vez en el App Store; no contiene compras integradas. La transacción la gestiona Apple y NotaVox no recibe ningún dato de pago.</li>
       </ul>
 
       <h2>Permisos solicitados</h2>
@@ -204,9 +221,10 @@
 <footer>
   <div class="wrap">
     <a class="brand" href="index.html"><img src="assets/icon.png" alt="" width="26" height="26" style="width:26px;height:26px"><span>NotaVox</span></a>
+    <a href="https://apps.apple.com/app/id6801285443" data-i18n="nav.get">Télécharger</a>
     <a href="index.html#support" data-i18n="nav.faq">Support</a>
     <a href="mailto:sramezani52@gmail.com?subject=NotaVox">sramezani52@gmail.com</a>
-    <span class="right" data-i18n="foot.rights">Application indépendante pour iPhone et iPad.</span>
+    <span class="right" data-i18n="foot.rights">Application indépendante pour iPhone, iPad et Apple Watch.</span>
   </div>
 </footer>
 

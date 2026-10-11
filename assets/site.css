@@ -70,11 +70,12 @@ a{color:var(--accent)}
   backdrop-filter:saturate(180%) blur(12px);
   border-bottom:1px solid var(--stroke);
 }
-.topbar .wrap{display:flex; align-items:center; gap:20px; height:66px}
+.topbar .wrap{display:flex; align-items:center; gap:14px 20px; min-height:66px; flex-wrap:wrap}
 .brand{display:flex; align-items:center; gap:11px; text-decoration:none; color:var(--ink)}
 .brand img{width:32px; height:32px; border-radius:9px; box-shadow:var(--shadow-s)}
 .brand span{font-family:"Bricolage Grotesque","Public Sans",sans-serif; font-weight:700; font-size:19px; letter-spacing:-.02em}
-.nav{display:flex; align-items:center; gap:26px; margin-left:auto}
+.nav{display:flex; align-items:center; gap:26px; margin-left:auto; min-width:0}
+.bar-actions{display:flex; align-items:center; gap:12px}
 .nav a{color:var(--ink-2); text-decoration:none; font-size:14.5px; font-weight:500; white-space:nowrap}
 .nav a:hover{color:var(--ink)}
 .langs{display:flex; gap:2px; background:var(--sunk); padding:3px; border-radius:9px}
@@ -106,6 +107,7 @@ p{margin:0}
 .btn-primary:hover{filter:brightness(1.08)}
 .btn-ghost{color:var(--ink); border-color:var(--stroke); background:var(--panel)}
 .btn-ghost:hover{border-color:var(--ink-3)}
+.btn-sm{padding:9px 15px; font-size:13.5px; border-radius:10px}
 
 /* ---------------- hero ---------------- */
 .hero{position:relative; overflow:hidden; border-bottom:1px solid var(--stroke)}
@@ -126,6 +128,7 @@ p{margin:0}
 .hero h1{margin-bottom:20px}
 .hero .lead{font-size:18.5px}
 .cta{display:flex; flex-wrap:wrap; gap:12px; margin-top:30px}
+.cta-note{margin-top:14px; color:var(--ink-3); font-size:13.5px; font-family:"IBM Plex Mono",ui-monospace,monospace}
 .trust{display:flex; flex-wrap:wrap; gap:8px 22px; margin-top:26px; font-size:14px; color:var(--ink-2)}
 .trust span{display:inline-flex; align-items:center; gap:8px}
 .tick{width:15px; height:15px; flex:none; stroke:var(--accent); fill:none; stroke-width:2.4; stroke-linecap:round; stroke-linejoin:round}
@@ -182,6 +185,9 @@ section{padding:88px 0}
 .plan li{display:flex; gap:11px; align-items:flex-start; font-size:14.5px; color:var(--ink-2)}
 .plan li svg{margin-top:4px}
 .plan-note{margin-top:20px; color:var(--ink-3); font-size:13.5px}
+.plans.solo{grid-template-columns:minmax(0,680px)}
+.plan.solo-card ul{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px 26px}
+.plan.solo-card .cta{margin-top:26px}
 
 /* ---------------- confidentialité (bandeau) ---------------- */
 .privacy-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:28px; margin-top:8px}
@@ -239,14 +245,48 @@ footer .right{margin-left:auto; font-family:"IBM Plex Mono",monospace; font-size
   .device{margin:0 auto; max-width:310px}
   .steps,.showcase,.privacy-grid{grid-template-columns:1fr; gap:26px}
   .plans{grid-template-columns:1fr}
-  .nav{gap:16px}
-  .nav a{display:none}
   section{padding:64px 0}
 }
+/* Sous 1040 px, les liens passent sur une rangée propre, sous la barre :
+   rien n'est masqué et rien ne déborde, jusqu'à 320 px de large. */
+@media (max-width:1040px){
+  html{scroll-padding-top:106px}
+  .topbar .wrap{min-height:0; padding-top:10px; gap:12px}
+  .bar-actions{margin-left:auto}
+  .nav{
+    order:3; flex-basis:100%; margin-left:0; gap:22px;
+    flex-wrap:nowrap; overflow-x:auto; padding:11px 0 12px;
+    scrollbar-width:none; -webkit-overflow-scrolling:touch;
+    mask-image:linear-gradient(90deg,#000 0,#000 calc(100% - 26px),transparent 100%);
+  }
+  .nav::-webkit-scrollbar{display:none}
+}
+/* Sous 520 px, deux rangées seulement : marque + bouton, puis liens + langues. */
 @media (max-width:520px){
+  .wrap{padding:0 16px}
   .grid-4{grid-template-columns:1fr}
+  .plan.solo-card ul{grid-template-columns:minmax(0,1fr)}
   .contact{flex-direction:column; align-items:flex-start; gap:10px}
-  .topbar .wrap{height:60px}
+  .brand img{width:28px; height:28px}
+  .brand span{font-size:17.5px}
+  .plan{padding:24px 22px}
+  .plan .price{font-size:36px}
+
+  html{scroll-padding-top:102px}
+  .topbar .wrap{gap:10px}
+  .brand{order:1}
+  .bar-actions{display:contents}
+  .topbar .btn-sm{order:2; margin-left:auto}
+  .nav{order:3; flex:1 1 180px; gap:18px; padding:9px 0 10px}
+  .nav a{font-size:14px}
+  .langs{order:4; flex:none}
+  .langs button{padding:5px 7px}
+}
+@media (max-width:380px){
+  .btn{padding:12px 18px; font-size:14.5px}
+  .btn-sm{padding:8px 12px; font-size:13px}
+  .nav{flex-basis:120px; gap:16px}
+  .langs button{padding:4px 6px; font-size:10.5px}
 }
 @media (prefers-reduced-motion:reduce){
   *{animation:none!important; transition:none!important}
